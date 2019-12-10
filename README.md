@@ -44,7 +44,7 @@ So, you can run some of the queries which I found very useful for this need.
 
 ![MDX Query](images/querymdx.jpg)
 
-Talking about DMV's, useful links are available here:
+Talking about DMV's, a couple of useful links are:
 - [SQL Server Analysis Services Tabular Protocol](https://docs.microsoft.com/en-us/openspecs/sql_server_protocols/ms-ssas-t/f85cd3b9-690c-4bc7-a1f0-a854d7daecd8)
 - [TabularModelDMVsForDocumentation](https://gist.github.com/mlongoria/a9a0bff0f51a5e9c200b9c8b378d79da)
 
