@@ -4,11 +4,9 @@
 
 There are some good tools out there but, the idea here is to create something using the SSAS Dynamic Management Views (DMV's), a very useful way to query metadata of a database. 
 
-Power BI Desktop uses a kind of "personal" Analysis Services (it runs a local instance of SSAS Tabular model in the background), running on a random local port
+As you know, Power BI Desktop uses a kind of "personal" Analysis Services (it runs a local instance of SSAS Tabular model in the background), running on a random local port
 
-Having the port number is crucial if you want to connect to a Power BI Desktop and you can do that with different methods
-
-Those that I prefer are:
+Each time you open the program, the port may be different and having the number is crucial if you want to connect to a Power BI Desktop You can do that with different methods but those I prefer are:
 - DAX Studio
 - CMD shell
 
@@ -17,11 +15,12 @@ Once connected, you can see the local port number in the button right of the DAX
 
 ![DAX Studio](images/daxstudio.JPG)
 
-With che CMD shell, you need to run the tool as Administrator and run the following command:
+With che CMD shell, you need to run the tool as Administrator and run the following two commands.
+The first is:
 
 TASKLIST /FI "imagename eq msmdsrv.exe" /FI "sessionname eq console"
 
-You need the PID (Process ID) and run the following command putting the PID number you got.
+When you see the result, you need the PID and run the second command putting the Process ID number you got.
 Something like:
 
 netstat /ano | findstr "12345"
@@ -35,7 +34,7 @@ TCP      127.0.0.1:62325        0.0.0.0:0       LISTENING    13944
 
 The listening connection is the one we are interested in, and the number coming after the local address is the port number that we need
 
-Now that we have the Analysis Services port, we are able to connect with SSMS on a server name like: localhost:62325
+Now that we have the Analysis Services port, we are able to connect with SQL Server Management Studio (SSMS) on an Analysis Services server, something like: 
 
 ![SQL Server Management Studio](images/ssms.jpg)
 
@@ -48,6 +47,7 @@ A complete reference is available here:
 - https://gist.github.com/mlongoria/a9a0bff0f51a5e9c200b9c8b378d79da 
 
 You can execute these queries from your SQL Server Management Studio (SSMS) using MDX or DMX query editor.
+
 
 I also wrap up each query in a stored procedure with the SQL OPENROWSET command, executed against a SQL Server database with a linked server to the Power BI Desktop (and your "personal" tabular model).
 
