@@ -49,6 +49,6 @@ A complete reference is available here:
 You can execute these queries from your SQL Server Management Studio (SSMS) using MDX or DMX query editor.
 
 
-I also wrap up each query in a stored procedure with the SQL OPENROWSET command, executed against a SQL Server database with a linked server to the Power BI Desktop (and your "personal" tabular model).
+If you have a SQL Server engine in your dev machine, I also wrap up each query in a stored procedure with the SQL OPENROWSET command, executed against a SQL Server database with a linked server to the Power BI Desktop (your "personal" Analysis Services).
 
-Using this way you're able to perform JOINs and all the TSQL constructs which you might need.
+So, using this way, you're able to perform JOINs and all the TSQL constructs which you might need.
