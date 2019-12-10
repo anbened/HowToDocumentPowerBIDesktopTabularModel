@@ -6,7 +6,7 @@ There are some good tools out there but, the idea here is to create something us
 
 As you know, Power BI Desktop uses a kind of "personal" Analysis Services (it runs a local instance of SSAS Tabular model in the background), running on a random local port.
 
-Please, pay attention that the port number used to connect to the local data model (AND the database name) will change every time you open the Power BI Desktop file, so the port number is crucial if you want to connect to a Power BI Desktop.
+Please, pay attention that the port number used to connect to the local data model (AND the database name) will change every time you open the Power BI Desktop file, and the port number is crucial if you want to connect to a Power BI Desktop.
 
 You can do that with different methods but those I prefer are:
 - DAX Studio
