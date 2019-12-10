@@ -9,7 +9,7 @@ As you know, Power BI Desktop uses a kind of "personal" Analysis Services (it ru
 Please, pay attention that the port number used to connect to the local data model (AND the database name) will change every time you open the Power BI Desktop file, and the port number is crucial if you want to connect to a Power BI Desktop.
 
 You can do that with different methods but those I prefer are:
-- DAX Studio
+- DAX Studio (https://daxstudio.org/)
 - CMD shell
 
 With the DAX Studio you need to open the tool, select the desired Power BI Desktop file and click "Connect".
