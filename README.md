@@ -1,6 +1,6 @@
 # Documentation Of Power BI Desktop Tabular Model
 
-## Working and creating a robust models with Power BI Desktop, sometimes is quite handy create simple documentation for the tabular database built with PBI: the catalog info, dimensions, attributes, measures, ...
+## Working and creating a robust model with Power BI Desktop, sometimes is quite handy create simple documentation for the tabular database built with PBI: the catalog info, dimensions, attributes, measures, ...
 
 There are some good tools out there but, the idea here is to create something using the SSAS Dynamic Management Views (DMV's), a very useful way to query metadata of a database. 
 
@@ -15,7 +15,7 @@ Those that I prefer are:
 With the DAX Studio you need to open the tool, select the desired Power BI Desktop file and click "Connect".
 Once connected, you can see the local port number in the button right of the DAX Studio window.
 
-![DAX Studio](images/daxstudio.jpg)
+![DAX Studio](images/daxstudio.JPG)
 
 With che CMD shell, you need to run the tool as Administrator and run the following command:
 
