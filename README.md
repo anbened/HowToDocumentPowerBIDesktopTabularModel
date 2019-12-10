@@ -1,6 +1,6 @@
 # Documentation Of Power BI Desktop Tabular Model
 
-## Working and creating a robust model with Power BI Desktop, sometimes is quite handy create simple documentation for the tabular database built with PBI: the catalog info, dimensions, attributes, measures, ...
+## With Power BI Desktop, we are able to create a robust, complex and rich data model and sometimes is quite handy create simple documentation for the tabular database built with PBI: the catalog info, dimensions, attributes, measures, ...
 
 There are some good tools out there but, the idea here is to create something using the SSAS Dynamic Management Views (DMV's), a very useful way to query metadata of a database. 
 
