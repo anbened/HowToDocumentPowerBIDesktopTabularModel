@@ -1,6 +1,6 @@
 # Documentation Of Power BI Desktop Tabular Model
 
-## Working and creating a robust model with Power BI Desktop, sometimes is quite handy create simple documentation for the tabular database built with PBI: the catalog info, dimensions, attributes, measures, ...
+## With Power BI Desktop, we are able to create a robust, complex and rich data model and sometimes is quite handy to create simple documentation for the tabular database built with PBI: the catalog info, dimensions, attributes, measures, ...
 
 There are some good tools out there but, the idea here is to create something using the SSAS Dynamic Management Views (DMV's), a very useful way to query metadata of a database. 
 
@@ -17,14 +17,14 @@ Once connected, you can see the local port number in the button right of the DAX
 
 With che CMD shell, you need to run the tool as Administrator and run the following two commands.
 The first is:
-
+```
 TASKLIST /FI "imagename eq msmdsrv.exe" /FI "sessionname eq console"
-
+```
 When you see the result, you need the PID and run the second command putting the Process ID number you got.
 Something like:
-
+```
 netstat /ano | findstr "12345"
-
+```
 The results shows Active Connection, Local Address (followed by the port number), Foreign Address, State, PID. Something like:
 
 TCP      127.0.0.1:62325        0.0.0.0:0       LISTENING    13944
@@ -42,13 +42,17 @@ So, you can find some of the queries which I found very useful for the need.
 
 ![MDX Query](images/querymdx.jpg)
 
-A complete reference is available here:
+Useful links are available here:
 - https://docs.microsoft.com/en-us/openspecs/sql_server_protocols/ms-ssas-t/f85cd3b9-690c-4bc7-a1f0-a854d7daecd8
 - https://gist.github.com/mlongoria/a9a0bff0f51a5e9c200b9c8b378d79da 
 
 You can execute these queries from your SQL Server Management Studio (SSMS) using MDX or DMX query editor.
 
 
-I also wrap up each query in a stored procedure with the SQL OPENROWSET command, executed against a SQL Server database with a linked server to the Power BI Desktop (and your "personal" tabular model).
+If you have a SQL Server engine in your dev machine, I also wrap up each query in a stored procedure with the SQL OPENROWSET command, executed against a SQL Server database with a linked server to the Power BI Desktop (your "personal" Analysis Services).
 
-Using this way you're able to perform JOINs and all the TSQL constructs which you might need.
+So, using this way, you're able to perform JOINs and all the TSQL constructs which you might need.
+
+- [MDX Queries](PBIDocumentation_MDX_Queries.mdx)
+
+- [SQL Server Procedures](PBIDocumentation_SQL_Procedures.sql)
