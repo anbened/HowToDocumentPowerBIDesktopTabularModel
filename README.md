@@ -57,7 +57,9 @@ So, using this way, you're able to perform JOINs and all the TSQL constructs whi
 
 ## Queries
 - [MDX Queries](PBIDocumentation_MDX_Queries.sql)
-![MDX Demo](images/mdx.jpg)
+
+![MDX Demo](images/mdx.JPG)
 
 - [SQL Server Procedures](PBIDocumentation_SQL_Procedures.sql)
-![SQL Demo](images/sql.jpg)
+
+![SQL Demo](images/sql.JPG)
