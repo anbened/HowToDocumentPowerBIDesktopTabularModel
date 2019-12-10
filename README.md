@@ -17,14 +17,14 @@ Once connected, you can see the local port number in the button right of the DAX
 
 With che CMD shell, you need to run the tool as Administrator and run the following two commands.
 The first is:
-
+```
 TASKLIST /FI "imagename eq msmdsrv.exe" /FI "sessionname eq console"
-
+```
 When you see the result, you need the PID and run the second command putting the Process ID number you got.
 Something like:
-
+```
 netstat /ano | findstr "12345"
-
+```
 The results shows Active Connection, Local Address (followed by the port number), Foreign Address, State, PID. Something like:
 
 TCP      127.0.0.1:62325        0.0.0.0:0       LISTENING    13944
