@@ -53,6 +53,7 @@ If you have a SQL Server engine in your dev machine, I also wrap up each query i
 
 So, using this way, you're able to perform JOINs and all the TSQL constructs which you might need.
 
-- [MDX Queries](PBIDocumentation_MDX_Queries.mdx)
+## Queries
+- [MDX Queries](PBIDocumentation_MDX_Queries.sql)
 
 - [SQL Server Procedures](PBIDocumentation_SQL_Procedures.sql)
