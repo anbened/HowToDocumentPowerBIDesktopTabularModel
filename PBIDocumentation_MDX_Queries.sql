@@ -1,4 +1,6 @@
 
+/*** MDX Queries ***/
+
 /* All models */
 SELECT 
 	[CATALOG_NAME] AS SSAS_Database_Name,
