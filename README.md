@@ -52,3 +52,7 @@ You can execute these queries from your SQL Server Management Studio (SSMS) usin
 If you have a SQL Server engine in your dev machine, I also wrap up each query in a stored procedure with the SQL OPENROWSET command, executed against a SQL Server database with a linked server to the Power BI Desktop (your "personal" Analysis Services).
 
 So, using this way, you're able to perform JOINs and all the TSQL constructs which you might need.
+
+- [MDX Queries](PBIDocumentation_MDX_Queries.mdx)
+
+- [SQL Server Procedures](PBIDocumentation_SQL_Procedures.sql)
