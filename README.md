@@ -29,17 +29,17 @@ The results shows Active Connection, Local Address (followed by the port number)
 TCP      127.0.0.1:62325        0.0.0.0:0       LISTENING    13944
 ...
 
-![CMD Shell](Images/cmdshell.jpg)
+![CMD Shell](images/cmdshell.jpg)
 
 The listening connection is the one we are interested in, and the number coming after the local address is the port number that we need
 
 Now that we have the Analysis Services port, we are able to connect with SSMS on a server name like: localhost:62325
 
-![SQL Server Management Studio](Images/ssms.jpg)
+![SQL Server Management Studio](images/ssms.jpg)
 
 So, you can find some of the queries which I found very useful for the need. 
 
-![MDX Query](Images/querymdx.jpg)
+![MDX Query](images/querymdx.jpg)
 
 A complete reference is available here:
 - https://docs.microsoft.com/en-us/openspecs/sql_server_protocols/ms-ssas-t/f85cd3b9-690c-4bc7-a1f0-a854d7daecd8
