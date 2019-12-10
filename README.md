@@ -55,6 +55,16 @@ As you can see, you can execute these queries from your SQL Server Management St
 
 If you have a SQL Server engine in your dev machine, I also wrap up each query in a stored procedure with the SQL OPENROWSET command, executed against a SQL Server database with a linked server to the Power BI Desktop (your "personal" Analysis Services).
 
+```
+/* Linked Server to Power BI Desktop */
+EXEC master.dbo.sp_addlinkedserver
+   @server = N'CubeLinkedServer',
+   @srvproduct=N'',
+   @provider=N'MSOLAP',
+   @datasrc=N'localhost:62325', /* <-- my dynamic port */
+   @catalog=N'3b85a18d-9de2-488b-8883-1d1a8eafb1b3' /* <-- my dynamic db name */
+```
+
 So, using this way, you're able to perform JOINs and all the TSQL constructs which you might need.
 
 ## Queries
