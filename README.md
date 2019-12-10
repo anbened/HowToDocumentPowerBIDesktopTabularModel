@@ -1,4 +1,4 @@
-# Documentation Of Power BI Desktop Tabular Model
+# How to document a Power BI (Desktop) Tabular Model
 
 ## With Power BI Desktop, we are able to create a robust, complex and rich data model and sometimes is quite handy to create simple documentation for the tabular database built with PBI: the catalog info, dimensions, attributes, measures, ...
 
