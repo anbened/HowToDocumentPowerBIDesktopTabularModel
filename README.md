@@ -39,7 +39,7 @@ Now that we have the Analysis Services port, we are able to connect with SQL Ser
 
 ![SQL Server Management Studio](images/ssms.jpg)
 
-So, you can run some of the queries which I found very useful for the need. 
+So, you can run some of the queries which I found very useful for this need. 
 
 ![MDX Query](images/querymdx.jpg)
 
