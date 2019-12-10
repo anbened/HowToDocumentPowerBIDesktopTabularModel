@@ -1,4 +1,4 @@
-# How to document a Power BI (Desktop) Tabular Model
+# How to document (inspect) a Power BI (Desktop) Tabular Model
 
 ## With Power BI Desktop, we are able to create a robust, complex and rich data model and sometimes is quite handy to create simple documentation for the tabular database built with PBI: the catalog info, dimensions, attributes, measures, ...
 
@@ -11,6 +11,8 @@ Please, pay attention that the port number used to connect to the local data mod
 You can do that with different methods but those I prefer are:
 - DAX Studio (https://daxstudio.org/)
 - CMD shell
+
+Let's see how to implement both methods:
 
 With the DAX Studio you need to open the tool, select the desired Power BI Desktop file and click "Connect".
 Once connected, you can see the local port number in the button right of the DAX Studio window.
@@ -36,7 +38,7 @@ The results shows Active Connection, Local Address (followed by the port number)
 
 The listening connection is the one we are interested in, and the number coming after the local address is the port number that we need
 
-Now that we have the Analysis Services port, we are able to connect with SQL Server Management Studio (SSMS) on an Analysis Services server, something like: 
+Now that we have the Analysis Services port, we are able to connect with SQL Server Management Studio (SSMS) to the PBIX file using a server type "Analysis Services", something like: 
 
 ![SQL Server Management Studio](images/ssms.jpg)
 
