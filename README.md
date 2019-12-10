@@ -15,6 +15,8 @@ Those that I prefer are:
 With the DAX Studio you need to open the tool, select the desired Power BI Desktop file and click "Connect".
 Once connected, you can see the local port number in the button right of the DAX Studio window.
 
+![DAX Studio](images/daxstudio.jpg)
+
 With che CMD shell, you need to run the tool as Administrator and run the following command:
 
 TASKLIST /FI "imagename eq msmdsrv.exe" /FI "sessionname eq console"
