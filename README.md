@@ -4,6 +4,8 @@
 
 There are some good tools out there but, the idea here is to create something using the SSAS Dynamic Management Views (DMV's), a very useful way to query metadata of a database. 
 
+So,  to accomplish the goal, the first thing we need to do is to open the file PBIX and connect to this with a tool like SQL Server Management Studio.
+
 As you know, Power BI Desktop uses a kind of "personal" Analysis Services (it runs a local instance of SSAS Tabular model in the background), running on a random local port.
 
 Please, pay attention that the port number used to connect to the local data model (AND the database name) will change every time you open the Power BI Desktop file, and the port number is crucial if you want to connect to a Power BI Desktop.
