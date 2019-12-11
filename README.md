@@ -18,10 +18,14 @@ You can do that with different methods but those I prefer are:
 
 Let's see how to implement both methods:
 
+## Find the port with DAX Studio
+
 With the DAX Studio you need to open the tool, select the desired Power BI Desktop file and click "Connect".
 Once connected, you can see the local port number in the button right of the DAX Studio window.
 
 ![DAX Studio](images/daxstudio.JPG)
+
+## Find the port with CMD Shell
 
 With che CMD shell, you need to run the tool as Administrator and run the following two commands.
 The first is:
@@ -56,6 +60,7 @@ Talking about DMV's, a couple of useful links are:
 
 As you can see, you can execute these queries from your SQL Server Management Studio (SSMS) using MDX or DMX query editor.
 
+## Using a Linked Server to PBI Desktop
 
 If you have a SQL Server engine in your dev machine, I also wrap up each query in a stored procedure with the SQL OPENROWSET command, executed against a SQL Server database with a linked server to the Power BI Desktop (your "personal" Analysis Services).
 
@@ -71,7 +76,7 @@ EXEC master.dbo.sp_addlinkedserver
 
 So, using this way, you're able to perform JOINs and all the TSQL constructs which you might need.
 
-## Queries
+## MDX Queries and Store Procedure to document
 - [MDX Queries](PBIDocumentation_MDX_Queries.sql)
 
 ![MDX Demo](images/mdx.JPG)
