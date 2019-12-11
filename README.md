@@ -76,8 +76,8 @@ EXEC master.dbo.sp_addlinkedserver
 
 So, using this way, you're able to perform JOINs and all the TSQL constructs which you might need.
 
-## DMV Query and Store Procedure to document the model
-- [MDX Queries](PBIDocumentation_MDX_Queries.sql)
+## DMV Queries and Store Procedures to document the model
+- [DMV Queries](PBIDocumentation_MDX_Queries.sql)
 
 ![MDX Demo](images/mdx.JPG)
 
